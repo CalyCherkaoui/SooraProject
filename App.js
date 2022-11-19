@@ -11,10 +11,32 @@ export default function App() {
       <View style={styles.boxB}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
         <Text style={styles.textHeroTitle}>Bringing Muslims Together</Text>
+        <View style={styles.boxB3}>
+          <Text>GooglePlay</Text>
+          <Text>AppStore</Text>
+        </View>
+      </View>
+      <View style={styles.boxImages}>
+        <Text>Image</Text>
+      </View>
+      <View style={styles.boxB}>
+        <Text style={styles.textCoomingSoon}>Comming Soon</Text>
+        <Text style={styles.textHeroTitle}>Get Notifiyed When we Launch</Text>
       </View>
       <View style={styles.inputContainer}>
-        <TextInput placeholder="here!..." style={styles.TextInput} />
-        <Button title='click here!' />
+        <TextInput placeholder="..." style={styles.TextInput} />
+        <Button title='Notify Me' />
+      </View>
+      <View style={styles.boxImages}>
+        <Text>Image</Text>
+      </View>
+      <View style={styles.footerContainer}>
+        <View style={styles.footerSocialMedia}>
+          <Text>Facebook Twitter</Text>
+        </View>
+        <View style={styles.footerCopyrights}>
+          <Text>Copyright 2022 Soora. All rights reserved</Text>
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -28,6 +50,9 @@ const styles = StyleSheet.create({
   boxA:{
     backgroundColor: 'yellow',
   },
+  boxB:{
+    backgroundColor: 'pink',
+  },
   textLogo: {
     fontSize: 16
   },
@@ -37,8 +62,11 @@ const styles = StyleSheet.create({
   textHeroTitle: {
     fontSize: 20,
   },
-  boxB:{
-    backgroundColor: 'pink',
+  boxB3: {
+    backgroundColor: 'gray',
+  },
+  boxImages: {
+    backgroundColor: 'orange',
   },
   inputContainer: {
     flexDirection: 'row',
@@ -48,5 +76,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     width: '60%'
-  }
+  },
+  footerContainer: {
+    backgroundColor: 'blue',
+  },
+  footerSocialMedia: {
+    backgroundColor: 'red',
+  },
+  footerCopyrights: {
+    backgroundColor: 'green'
+  },
 });
