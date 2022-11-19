@@ -4,14 +4,14 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 export default function App() {
   return (
     <View style={styles.appContainer}>
-      <View style={styles.boxA}>
+      <View style={styles.boxNavigation}>
         <Text style={styles.textLogo}>Soora</Text>
         <Button title='Contact us' />
       </View>
-      <View style={styles.boxB}>
+      <View style={styles.boxDisplay}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
         <Text style={styles.textHeroTitle}>Bringing Muslims Together</Text>
-        <View style={styles.boxB3}>
+        <View style={styles.boxStores}>
           <Text>GooglePlay</Text>
           <Text>AppStore</Text>
         </View>
@@ -19,7 +19,7 @@ export default function App() {
       <View style={styles.boxImages}>
         <Text>Image</Text>
       </View>
-      <View style={styles.boxB}>
+      <View style={styles.boxDisplay}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
         <Text style={styles.textHeroTitle}>Get Notifiyed When we Launch</Text>
       </View>
@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
   appContainer: {
     padding: 10
   },
-  boxA:{
+  boxNavigation:{
     backgroundColor: 'yellow',
   },
-  boxB:{
+  boxDisplay:{
     backgroundColor: 'pink',
   },
   textLogo: {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   textHeroTitle: {
     fontSize: 20,
   },
-  boxB3: {
+  boxStores: {
     backgroundColor: 'gray',
   },
   boxImages: {
@@ -84,6 +84,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
   },
   footerCopyrights: {
-    backgroundColor: 'green'
+    backgroundColor: 'green',
   },
 });
