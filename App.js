@@ -23,9 +23,12 @@ export default function App() {
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
         <Text style={styles.textHeroTitle}>Get Notifiyed When we Launch</Text>
       </View>
-      <View style={styles.inputContainer}>
-        <TextInput placeholder="..." style={styles.TextInput} />
-        <Button title='Notify Me' />
+      <View style={styles.BoxInput}>
+        <View style={styles.inputContainer}>
+          <TextInput placeholder="..." style={styles.TextInput} />
+          <Button title='Notify Me' />
+        </View>
+        <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
         <Text>Image</Text>
@@ -45,13 +48,20 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    padding: 10
+    paddingTop: 50,
+    paddingRight: 20,
+    paddingLeft: 20,
+    backgroundColor: 'green',
   },
   boxNavigation:{
     backgroundColor: 'yellow',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'center',
   },
   boxDisplay:{
     backgroundColor: 'pink',
+    padding: 12,
   },
   textLogo: {
     fontSize: 16
@@ -68,9 +78,17 @@ const styles = StyleSheet.create({
   boxImages: {
     backgroundColor: 'orange',
   },
+  BoxInput: {
+    backgroundColor: 'white',
+    alignContent: 'center',
+  },
   inputContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    backgroundColor: 'grey',
+  },
+  inputNote: {
+    backgroundColor: 'yellow',
   },
   TextInput: {
     borderWidth: 1,
