@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingLeft: 20,
     backgroundColor: 'green',
+    flexDirection: 'column',
   },
   boxNavigation:{
     backgroundColor: 'yellow',
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   boxStores: {
-    backgroundColor: 'gray',
+    backgroundColor: 'skyblue',
   },
   boxImages: {
     backgroundColor: 'orange',
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'grey',
+    backgroundColor: 'powderblue',
   },
   inputNote: {
     backgroundColor: 'yellow',
