@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
+import BoxImage from './components/BoxImage';
 
 export default function App() {
   return (
-    <View style={styles.appContainer}>
+    <ScrollView style={styles.appContainer}>
       <View style={styles.boxNavigation}>
         <Text style={styles.textLogo}>Soora</Text>
         <Button title='Contact us' />
@@ -17,7 +18,7 @@ export default function App() {
         </View>
       </View>
       <View style={styles.boxImages}>
-        <Text>Image</Text>
+        <BoxImage />
       </View>
       <View style={styles.boxDisplay}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
@@ -42,15 +43,15 @@ export default function App() {
         </View>
       </View>
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   appContainer: {
     paddingTop: 50,
-    paddingRight: 20,
-    paddingLeft: 20,
+    // paddingRight: 20,
+    // paddingLeft: 20,
     backgroundColor: 'green',
     flexDirection: 'column',
   },
@@ -78,6 +79,8 @@ const styles = StyleSheet.create({
   },
   boxImages: {
     backgroundColor: 'orange',
+    // width: '100%'
+    // height: "50%"
   },
   BoxInput: {
     backgroundColor: 'white',
