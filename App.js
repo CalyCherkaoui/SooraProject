@@ -5,13 +5,14 @@ import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextCoomingSoon from './components/TextCommingSoon';
 import BoxImage2 from './components/BoxImage2';
+import ContactUsButton from './components/ContactUsButton';
 
 export default function App() {
   return (
     <ScrollView style={styles.appContainer}>
       <View style={styles.boxNavigation}>
         <Text style={styles.textLogo}>Soora</Text>
-        <Button title='Contact us' />
+        <ContactUsButton />
       </View>
       <View style={styles.boxDisplay}>
         <TextCoomingSoon />
@@ -54,8 +55,6 @@ export default function App() {
 const styles = StyleSheet.create({
   appContainer: {
     paddingTop: 50,
-    // paddingRight: 20,
-    // paddingLeft: 20,
     backgroundColor: 'green',
     flexDirection: 'column',
   },
@@ -63,7 +62,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'yellow',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignContent: 'center',
+    // alignContent: 'center',
+    height: 32,
+    paddingLeft: 20,
+    paddingRight: 20,
   },
   boxDisplay:{
     backgroundColor: 'pink',
