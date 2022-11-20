@@ -32,7 +32,7 @@ function ContactUsButton(props) {
   return (
     <TouchableOpacity
           style={styles.ContactBtnStl}
-          activeOpacity={1}
+          // activeOpacity={1}
           onPress={showAlert}
           >
           <Text style={{...buttonTextStyle, ...textTypo}}>Contact Us</Text>
@@ -49,9 +49,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'black',
-    borderRadius: 4,
+    borderRadius: 5,
     paddingLeft: 14,
     paddingRight: 14,
+    height: 32,
   },
   buttonImageIconStyle: {
     width: 10,

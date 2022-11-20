@@ -21,10 +21,6 @@ export default function App() {
       <View style={styles.boxDisplay}>
         <TextCoomingSoon />
         <HeroTitle myText={"Bringing\nMuslims Together"} />
-        {/* <View style={styles.boxStores}>
-          <Text>GooglePlay</Text>
-          <Text>AppStore</Text>
-        </View> */}
         <BoxStoresImages />
       </View>
       <View style={styles.boxImages}>
@@ -59,12 +55,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    paddingTop: 50,
-    backgroundColor: 'green',
+    paddingTop: 40,
+    // backgroundColor: 'green',
     flexDirection: 'column',
   },
   boxNavigation:{
-    backgroundColor: 'yellow',
+    // backgroundColor: 'yellow',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignContent: 'center',
@@ -74,7 +70,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   boxDisplay:{
-    backgroundColor: 'pink',
+    // backgroundColor: 'pink',
     paddingLeft: 20,
     paddingRight: 20,
     paddingTop: 60,
@@ -89,11 +85,8 @@ const styles = StyleSheet.create({
     color: 'blue',
     fontFamily: 'Inter-Regular',
   },
-  boxStores: {
-    backgroundColor: 'skyblue',
-  },
   boxImages: {
-    backgroundColor: 'orange',
+    // backgroundColor: 'orange',
   },
   BoxInput: {
     backgroundColor: 'white',

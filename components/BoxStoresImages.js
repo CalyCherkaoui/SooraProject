@@ -18,7 +18,7 @@ function BoxStoresImages() {
 
 const styles = StyleSheet.create({
   BoxStoresStyle: {
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
