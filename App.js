@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
 import BoxImage from './components/BoxImage';
@@ -32,7 +33,7 @@ export default function App() {
         <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
-        <Text>Image</Text>
+        <BoxImage />
       </View>
       <View style={styles.footerContainer}>
         <View style={styles.footerSocialMedia}>
