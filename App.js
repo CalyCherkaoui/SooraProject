@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, ScrollView, Image } from 'react-native';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextCoomingSoon from './components/TextCommingSoon';
@@ -11,7 +11,10 @@ export default function App() {
   return (
     <ScrollView style={styles.appContainer}>
       <View style={styles.boxNavigation}>
-        <Text style={styles.textLogo}>Soora</Text>
+        <Image
+          source={require('./assets/images/logo1.png')}
+          style={styles.imgLogo}
+        />
         <ContactUsButton />
       </View>
       <View style={styles.boxDisplay}>
@@ -62,7 +65,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'yellow',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // alignContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
     height: 32,
     paddingLeft: 20,
     paddingRight: 20,
@@ -71,8 +75,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink',
     padding: 12,
   },
-  textLogo: {
-    fontSize: 16
+  imgLogo: {
+    resizeMode: "contain",
+    height: 16,
+    width: 75,
   },
   textCoomingSoon: {
     color: 'blue',
