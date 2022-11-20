@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
 import BoxImage from './components/BoxImage';
+import HeroTitle from './components/HeroTitle';
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
       </View>
       <View style={styles.boxDisplay}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
-        <Text style={styles.textHeroTitle}>Bringing Muslims Together</Text>
+        <HeroTitle myText={'Bringing Muslims Together'} />
         <View style={styles.boxStores}>
           <Text>GooglePlay</Text>
           <Text>AppStore</Text>
@@ -23,7 +24,7 @@ export default function App() {
       </View>
       <View style={styles.boxDisplay}>
         <Text style={styles.textCoomingSoon}>Comming Soon</Text>
-        <Text style={styles.textHeroTitle}>Get Notifiyed When we Launch</Text>
+        <HeroTitle myText={'Get Notifiyed When we Launch'} />
       </View>
       <View style={styles.BoxInput}>
         <View style={styles.inputContainer}>
@@ -71,10 +72,12 @@ const styles = StyleSheet.create({
   },
   textCoomingSoon: {
     color: 'blue',
+    fontFamily: 'Inter-Regular',
   },
-  textHeroTitle: {
-    fontSize: 20,
-  },
+  // textHeroTitle: {
+  //   fontSize: 20,
+  //   fontFamily: 'Inter-Bold',
+  // },
   boxStores: {
     backgroundColor: 'skyblue',
   },
