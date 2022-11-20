@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
+import TextCoomingSoon from './components/TextCommingSoon';
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
         <Button title='Contact us' />
       </View>
       <View style={styles.boxDisplay}>
-        <Text style={styles.textCoomingSoon}>Comming Soon</Text>
+        {/* <Text style={styles.textCoomingSoon}>Comming Soon</Text> */}
+        <TextCoomingSoon />
         <HeroTitle myText={'Bringing Muslims Together'} />
         <View style={styles.boxStores}>
           <Text>GooglePlay</Text>
@@ -23,7 +25,8 @@ export default function App() {
         <BoxImage />
       </View>
       <View style={styles.boxDisplay}>
-        <Text style={styles.textCoomingSoon}>Comming Soon</Text>
+        {/* <Text style={styles.textCoomingSoon}>Comming Soon</Text> */}
+        <TextCoomingSoon />
         <HeroTitle myText={'Get Notifiyed When we Launch'} />
       </View>
       <View style={styles.BoxInput}>
