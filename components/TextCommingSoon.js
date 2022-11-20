@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'yellow',
+    marginBottom: 8,
   },
   lineStyle: {
     borderWidth: 1.26,

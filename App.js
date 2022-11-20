@@ -6,6 +6,7 @@ import HeroTitle from './components/HeroTitle';
 import TextCoomingSoon from './components/TextCommingSoon';
 import BoxImage2 from './components/BoxImage2';
 import ContactUsButton from './components/ContactUsButton';
+import BoxStoresImages from './components/BoxStoresImages';
 
 export default function App() {
   return (
@@ -20,10 +21,11 @@ export default function App() {
       <View style={styles.boxDisplay}>
         <TextCoomingSoon />
         <HeroTitle myText={"Bringing\nMuslims Together"} />
-        <View style={styles.boxStores}>
+        {/* <View style={styles.boxStores}>
           <Text>GooglePlay</Text>
           <Text>AppStore</Text>
-        </View>
+        </View> */}
+        <BoxStoresImages />
       </View>
       <View style={styles.boxImages}>
         <BoxImage2 />
