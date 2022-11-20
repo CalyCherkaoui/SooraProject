@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-nat
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextCoomingSoon from './components/TextCommingSoon';
+import BoxImage2 from './components/BoxImage2';
 
 export default function App() {
   return (
@@ -13,7 +14,6 @@ export default function App() {
         <Button title='Contact us' />
       </View>
       <View style={styles.boxDisplay}>
-        {/* <Text style={styles.textCoomingSoon}>Comming Soon</Text> */}
         <TextCoomingSoon />
         <HeroTitle myText={'Bringing Muslims Together'} />
         <View style={styles.boxStores}>
@@ -22,10 +22,9 @@ export default function App() {
         </View>
       </View>
       <View style={styles.boxImages}>
-        <BoxImage />
+        <BoxImage2 />
       </View>
       <View style={styles.boxDisplay}>
-        {/* <Text style={styles.textCoomingSoon}>Comming Soon</Text> */}
         <TextCoomingSoon />
         <HeroTitle myText={'Get Notifiyed When we Launch'} />
       </View>
@@ -37,7 +36,7 @@ export default function App() {
         <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
-        <BoxImage />
+      <BoxImage />
       </View>
       <View style={styles.footerContainer}>
         <View style={styles.footerSocialMedia}>
