@@ -73,7 +73,10 @@ const styles = StyleSheet.create({
   },
   boxDisplay:{
     backgroundColor: 'pink',
-    padding: 12,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 60,
+    justifyContent: 'center'
   },
   imgLogo: {
     resizeMode: "contain",
@@ -84,17 +87,11 @@ const styles = StyleSheet.create({
     color: 'blue',
     fontFamily: 'Inter-Regular',
   },
-  // textHeroTitle: {
-  //   fontSize: 20,
-  //   fontFamily: 'Inter-Bold',
-  // },
   boxStores: {
     backgroundColor: 'skyblue',
   },
   boxImages: {
     backgroundColor: 'orange',
-    // width: '100%'
-    // height: "50%"
   },
   BoxInput: {
     backgroundColor: 'white',

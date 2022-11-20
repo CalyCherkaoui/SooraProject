@@ -1,21 +1,48 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-import { Text } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 import { useFonts } from 'expo-font';
 
 function TextCoomingSoon(props) {
   const [fontsLoaded] = useFonts({
-    'Inter-Regular': require('../assets/fonts/Inter-Regular.ttf'),
+    'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
   })
 
+  let textFont = {
+    fontFamily: 'Inter-Medium',
+  }
+
+  const TextCoomingSoonStyle = {
+    fontSize: 12,
+    fontWeight: "500",
+    lineHeight: 14.52,
+    alignContent: 'center'
+  }
+
   if (!fontsLoaded) {
-    return (
-      <Text style={{fontSize: 12, fontWeight: "500"}}>Comming Soon</Text>
-    )
+    textFont = {};
   }
   return (
-    <Text style={{fontFamily: 'Inter-Regular', fontSize: 12, fontWeight: "500"}}>Comming Soon</Text>
+    <View style={styles.commingSoonBox}>
+      <View style={styles.lineStyle}></View>
+      <Text style={{...textFont, ...TextCoomingSoonStyle}}>Comming Soon</Text>
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  commingSoonBox: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'yellow',
+  },
+  lineStyle: {
+    borderWidth: 1.26,
+    borderColor: 'black',
+    width: 18,
+    backgroundColor: 'black',
+    marginRight: 5.6,
+  },
+})
 
 export default TextCoomingSoon
