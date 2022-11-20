@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 function HeroTitle(props) {
@@ -10,11 +10,11 @@ function HeroTitle(props) {
 
   if (!fontsLoaded) {
     return (
-      <Text style={{fontSize: 20}}>{props.myText}</Text>
+      <Text style={styles.typographyHeroBasic}>{props.myText}</Text>
     )
   }
   return (
-    <Text style={{fontFamily: 'Inter-Bold', fontSize: 20}}>{props.myText}</Text>
+    <Text style={styles.typographyHero}>{props.myText}</Text>
   )
 }
 
@@ -22,13 +22,21 @@ HeroTitle.propTypes = {
   myText: PropTypes.string,
 }
 
-// const styles = StyleSheet.create({
-//   textHeroTitle: {
-//     fontSize: 20,
-//     fontFamily: 'Inter-Bold',
-//   },
-//   textHeroTitleBasic: {
-//     fontSize: 20,
-//   }
-// })
+const styles = StyleSheet.create({
+  typographyHero: {
+    fontFamily: 'Inter-Bold',
+    fontSize: 36,
+    fontWeight: "800",
+    lineHeight: 44,
+    textAlign: "center",
+    color: 'black'
+  },
+  typographyHeroBasic: {
+    fontSize: 36,
+    fontWeight: "800",
+    lineHeight: 44,
+    textAlign: "center",
+    color: 'black'
+  }
+})
 export default HeroTitle

@@ -10,11 +10,11 @@ function TextCoomingSoon(props) {
 
   if (!fontsLoaded) {
     return (
-      <Text style={{fontSize: 16}}>Comming Soon</Text>
+      <Text style={{fontSize: 12, fontWeight: "500"}}>Comming Soon</Text>
     )
   }
   return (
-    <Text style={{fontFamily: 'Inter-Regular', fontSize: 16}}>Comming Soon</Text>
+    <Text style={{fontFamily: 'Inter-Regular', fontSize: 12, fontWeight: "500"}}>Comming Soon</Text>
   )
 }
 

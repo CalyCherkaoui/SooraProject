@@ -15,7 +15,7 @@ export default function App() {
       </View>
       <View style={styles.boxDisplay}>
         <TextCoomingSoon />
-        <HeroTitle myText={'Bringing Muslims Together'} />
+        <HeroTitle myText={"Bringing\nMuslims Together"} />
         <View style={styles.boxStores}>
           <Text>GooglePlay</Text>
           <Text>AppStore</Text>
@@ -26,7 +26,7 @@ export default function App() {
       </View>
       <View style={styles.boxDisplay}>
         <TextCoomingSoon />
-        <HeroTitle myText={'Get Notifiyed When we Launch'} />
+        <HeroTitle myText={"Get Notifiyed\nWhen we Launch"} />
       </View>
       <View style={styles.BoxInput}>
         <View style={styles.inputContainer}>
