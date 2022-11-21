@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height/2,
     // height: "100%",
-    backgroundColor: 'red',
+    // backgroundColor: 'red',
     // borderColor: 'blue',
     // borderWidth: 5,
     // flex: 1,

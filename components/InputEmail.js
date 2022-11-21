@@ -6,23 +6,40 @@ function InputEmail(props) {
   // const [email, SetEdMail] = useState('');
   const [submitted, SetSubmitted] = useState(false);
   const [fontsLoaded] = useFonts({
-    'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
+    'Inter-SemiBold': require('../assets/fonts/Inter-SemiBold.ttf')
   })
 
-  let inputBtnTypo = {
-    fontFamily: 'Inter-Medium',
+  let textStyleTypo = {
+    fontFamily: 'Inter-SemiBold',
   }
 
   const inputBtnTextStyle = {
     fontSize: 12,
     fontWeight: "600",
     lineHeight: 14.52,
-    textAlign: "center",
+    textAlign: 'center',
     color: 'white'
   }
 
+  const textStyle = {
+    fontSize: 12,
+    fontWeight: "600",
+    lineHeight: 14.52,
+    textAlign: 'center',
+    color: '#3b5998',
+    marginBottom: 4,
+  }
+
+  const textNoteStyle = {
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14.52,
+    textAlign: 'center',
+    color: 'balck',
+  }
+
   if (!fontsLoaded) {
-    inputBtnTypo = {};
+    textStyleTypo = {};
   };
 
   const onPressHandler = () => {
@@ -39,42 +56,44 @@ function InputEmail(props) {
         />
         <TouchableOpacity
           style={styles.buttonStyle}
-          // activeOpacity={1}
           onPress={onPressHandler}
           >
-          <Text style={{...inputBtnTextStyle, ...inputBtnTypo}}>Notify me!</Text>
+          <Text style={{...inputBtnTextStyle, ...textStyleTypo}}>Notify me!</Text>
         </TouchableOpacity>
       </View>
        {submitted?
-        <Text style={styles.textStyle}>Your email adress has been recieved.</Text>
+        <Text style={{...textStyle, ...textStyleTypo}}>Your email adress has been recieved.</Text>
         :
         null
        }
+      <Text style={{...textNoteStyle}}>{"Don't worry, we won't spam you :)"} </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   inputContainer: {
-    backgroundColor: 'yellow',
+    // backgroundColor: 'yellow',
   },
   formStyle: {
-    backgroundColor: 'gray',
+    // backgroundColor: 'gray',
     padding: 3,
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
     borderRadius: 100,
     borderColor: 'black',
-    borderWidth: 2,
+    borderWidth: 0.8,
     height: 45,
+    marginBottom: 8.25,
   },
   inputStyle: {
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
     borderRadius: 100,
     flex: 2,
     fontSize: 12,
     height: '90%',
+    padding: 5,
   },
   buttonStyle: {
     backgroundColor: 'black',
@@ -83,12 +102,6 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     justifyContent: 'center',
   },
-  textContainer: {
-    backgroundColor: 'pink',
-  },
-  textStyle: {
-    backgroundColor: 'green',
-  }
 })
 
 export default InputEmail;

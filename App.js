@@ -33,7 +33,6 @@ export default function App() {
       </View>
       <View style={styles.BoxInput}>
         <InputEmail />
-        <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
         <BoxImage />
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
   //   // backgroundColor: 'orange',
   // },
   BoxInput: {
-    backgroundColor: 'powderblue',
+    // backgroundColor: 'powderblue',
     alignContent: 'center',
     padding: 20,
   },
@@ -95,9 +94,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: 'powderblue',
-  },
-  inputNote: {
-    backgroundColor: 'yellow',
   },
   TextInput: {
     borderWidth: 1,
