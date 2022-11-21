@@ -7,6 +7,7 @@ import TextCoomingSoon from './components/TextCommingSoon';
 import BoxImage2 from './components/BoxImage2';
 import ContactUsButton from './components/ContactUsButton';
 import BoxStoresImages from './components/BoxStoresImages';
+import InputEmail from './components/InputEmail';
 
 export default function App() {
   return (
@@ -31,10 +32,11 @@ export default function App() {
         <HeroTitle myText={"Get Notifiyed\nWhen we Launch"} />
       </View>
       <View style={styles.BoxInput}>
-        <View style={styles.inputContainer}>
+        {/* <View style={styles.inputContainer}>
           <TextInput placeholder="..." style={styles.TextInput} />
           <Button title='Notify Me' />
-        </View>
+        </View> */}
+        <InputEmail />
         <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
