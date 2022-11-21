@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput, ScrollView, Image, Separator } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
-import TextCoomingSoon from './components/TextCommingSoon';
+import TextComingSoon from './components/TextComingSoon';
 import BoxImage2 from './components/BoxImage2';
 import ContactUsButton from './components/ContactUsButton';
 import BoxStoresImages from './components/BoxStoresImages';
@@ -20,7 +20,7 @@ export default function App() {
         <ContactUsButton />
       </View>
       <View style={styles.boxDisplay}>
-        <TextCoomingSoon />
+        <TextComingSoon />
         <HeroTitle myText={"Bringing\nMuslims Together"} />
         <BoxStoresImages />
       </View>
@@ -28,7 +28,7 @@ export default function App() {
         <BoxImage2 />
       </View>
       <View style={styles.boxDisplay}>
-        <TextCoomingSoon />
+        <TextComingSoon />
         <HeroTitle myText={"Get Notifiyed\nWhen we Launch"} />
       </View>
       <View style={styles.BoxInput}>
@@ -36,20 +36,19 @@ export default function App() {
         <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
       <View style={styles.boxImages}>
-      <BoxImage />
+        <BoxImage />
       </View>
       <View style={styles.footerContainer}>
         <View style={styles.footerSocialMedia}>
           <Text>Facebook Twitter</Text>
         </View>
-        <Separator />
         <View style={styles.footerCopyrights}>
           <Text>Copyright 2022 Soora. All rights reserved</Text>
         </View>
       </View>
       <StatusBar style="auto" />
     </ScrollView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -84,9 +83,9 @@ const styles = StyleSheet.create({
     color: 'blue',
     fontFamily: 'Inter-Regular',
   },
-  boxImages: {
-    // backgroundColor: 'orange',
-  },
+  // boxImages: {
+  //   // backgroundColor: 'orange',
+  // },
   BoxInput: {
     backgroundColor: 'powderblue',
     alignContent: 'center',

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import { useFonts } from 'expo-font';
 
-function TextCoomingSoon(props) {
+function TextComingSoon(props) {
   const [fontsLoaded] = useFonts({
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
   })
@@ -24,7 +24,7 @@ function TextCoomingSoon(props) {
   return (
     <View style={styles.commingSoonBox}>
       <View style={styles.lineStyle}></View>
-      <Text style={{...textFont, ...TextCoomingSoonStyle}}>Comming Soon</Text>
+      <Text style={{...textFont, ...TextCoomingSoonStyle}}>Coming Soon</Text>
     </View>
   )
 }
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default TextCoomingSoon
+export default TextComingSoon;
