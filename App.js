@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, ScrollView, Image} from 'react-native';
+import { StyleSheet, View, Image} from 'react-native';
+import { PageScrollView } from 'pagescrollview';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextComingSoon from './components/TextComingSoon';
@@ -12,7 +13,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <ScrollView style={styles.appContainer}>
+    <PageScrollView style={styles.appContainer} useWindowScrolling={true}>
       <View style={styles.boxNavigation}>
         <Image
           source={require('./assets/images/logo1.png')}
@@ -40,7 +41,7 @@ export default function App() {
       </View>
       <Footer />
       <StatusBar style="auto" />
-    </ScrollView>
+    </PageScrollView>
   )
 }
 
