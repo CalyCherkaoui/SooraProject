@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, Image} from 'react-native';
+import { StyleSheet, View, ScrollView, Image} from 'react-native';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextComingSoon from './components/TextComingSoon';
@@ -8,6 +8,7 @@ import BoxImage2 from './components/BoxImage2';
 import ContactUsButton from './components/ContactUsButton';
 import BoxStoresImages from './components/BoxStoresImages';
 import InputEmail from './components/InputEmail';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -37,14 +38,7 @@ export default function App() {
       <View style={styles.boxImages}>
         <BoxImage />
       </View>
-      <View style={styles.footerContainer}>
-        <View style={styles.footerSocialMedia}>
-          <Text>Facebook Twitter</Text>
-        </View>
-        <View style={styles.footerCopyrights}>
-          <Text>Copyright 2022 Soora. All rights reserved</Text>
-        </View>
-      </View>
+      <Footer />
       <StatusBar style="auto" />
     </ScrollView>
   )
@@ -100,13 +94,13 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     width: '60%'
   },
-  footerContainer: {
-    backgroundColor: 'blue',
-  },
-  footerSocialMedia: {
-    backgroundColor: 'red',
-  },
-  footerCopyrights: {
-    backgroundColor: 'green',
-  },
+  // footerContainer: {
+  //   backgroundColor: 'blue',
+  // },
+  // footerSocialMedia: {
+  //   backgroundColor: 'red',
+  // },
+  // footerCopyrights: {
+  //   backgroundColor: 'green',
+  // },
 });
