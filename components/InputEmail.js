@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
-import { Button, TextInput, View, Text, StyleSheet } from 'react-native'
+import React, { useState } from 'react';
+import { TextInput, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useFonts } from 'expo-font';
 
-const InputEmail = () => {
+function InputEmail(props) {
   // const [email, SetEdMail] = useState('');
   const [submitted, SetSubmitted] = useState(false);
-  const onPressHandler = () => {
-    SetSubmitted(!submitted);
-  }
-
   const [fontsLoaded] = useFonts({
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
   })
@@ -27,7 +23,11 @@ const InputEmail = () => {
 
   if (!fontsLoaded) {
     inputBtnTypo = {};
-  }
+  };
+
+  const onPressHandler = () => {
+    SetSubmitted(!submitted);
+  };
 
   return (
     <View style={styles.inputContainer}>
@@ -37,11 +37,6 @@ const InputEmail = () => {
           style={styles.inputStyle}
           // onChangeText={(val) => SetEdMail(val)}
         />
-        <Button
-          title='Notify me!'
-          style={styles.buttonStyle}
-          onPress={onPressHandler}
-         />
         <TouchableOpacity
           style={styles.buttonStyle}
           // activeOpacity={1}
@@ -51,12 +46,12 @@ const InputEmail = () => {
         </TouchableOpacity>
       </View>
        {submitted?
-        <Text>Your email adress has been recieved.</Text>
+        <Text style={styles.textStyle}>Your email adress has been recieved.</Text>
         :
         null
        }
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -65,14 +60,28 @@ const styles = StyleSheet.create({
   },
   formStyle: {
     backgroundColor: 'gray',
-    padding: 10,
+    padding: 3,
     flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    borderRadius: 100,
+    borderColor: 'black',
+    borderWidth: 2,
+    height: 45,
   },
   inputStyle: {
     backgroundColor: 'blue',
+    borderRadius: 100,
+    flex: 2,
+    fontSize: 12,
+    height: '90%',
   },
   buttonStyle: {
-    color: 'black',
+    backgroundColor: 'black',
+    width: 100,
+    height: 36,
+    borderRadius: 100,
+    justifyContent: 'center',
   },
   textContainer: {
     backgroundColor: 'pink',
@@ -80,6 +89,6 @@ const styles = StyleSheet.create({
   textStyle: {
     backgroundColor: 'green',
   }
-});
+})
 
-export default InputEmail
+export default InputEmail;

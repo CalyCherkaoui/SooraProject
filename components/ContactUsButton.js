@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, Image, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { useFonts } from 'expo-font';
 
-function ContactUsButton(props) {
+function ContactUsButton() {
   const [fontsLoaded] = useFonts({
     'Inter-SemiBold': require('../assets/fonts/Inter-SemiBold.ttf'),
   })
@@ -28,7 +28,8 @@ function ContactUsButton(props) {
 
   if (!fontsLoaded) {
     textTypo = {};
-  }
+  };
+
   return (
     <TouchableOpacity
           style={styles.ContactBtnStl}
