@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, ScrollView, Image, Separator } from 'react-native';
 import BoxImage from './components/BoxImage';
 import HeroTitle from './components/HeroTitle';
 import TextCoomingSoon from './components/TextCommingSoon';
@@ -32,10 +32,6 @@ export default function App() {
         <HeroTitle myText={"Get Notifiyed\nWhen we Launch"} />
       </View>
       <View style={styles.BoxInput}>
-        {/* <View style={styles.inputContainer}>
-          <TextInput placeholder="..." style={styles.TextInput} />
-          <Button title='Notify Me' />
-        </View> */}
         <InputEmail />
         <Text style={styles.inputNote}>Don't worry, we won't spam you </Text>
       </View>
@@ -46,6 +42,7 @@ export default function App() {
         <View style={styles.footerSocialMedia}>
           <Text>Facebook Twitter</Text>
         </View>
+        <Separator />
         <View style={styles.footerCopyrights}>
           <Text>Copyright 2022 Soora. All rights reserved</Text>
         </View>
@@ -91,8 +88,9 @@ const styles = StyleSheet.create({
     // backgroundColor: 'orange',
   },
   BoxInput: {
-    backgroundColor: 'white',
+    backgroundColor: 'powderblue',
     alignContent: 'center',
+    padding: 20,
   },
   inputContainer: {
     flexDirection: 'row',
