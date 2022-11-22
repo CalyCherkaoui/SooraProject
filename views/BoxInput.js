@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
+import InputEmail from '../components/InputEmail'
 
 function BoxInput() {
   return (

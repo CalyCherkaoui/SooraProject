@@ -1,33 +1,12 @@
 import React from 'react'
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
-import { useFonts } from 'expo-font';
+import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
 
-function Footer() {
-  const [fontsLoaded] = useFonts({
-    'Inter-Regular': require('../assets/fonts/Inter-Regular.ttf'),
-  })
-
-  let textCopyrights = {
-    fontFamily: 'Inter-Regular',
-  }
-  const textCopyrightsStyle = {
-    fontSize: 12,
-    fontWeight: '400',
-    lineHeight: 14.52,
-    backgroundColor: 'pink',
-    textAlign: true,
-    height: '50',
-  }
-
-  if (!fontsLoaded) {
-    textCopyrights = {};
-  }
+function FooterSocial() {
   return (
-    <View style={styles.footerContainer}>
       <View style={styles.footerSocialMedia}>
         <TouchableOpacity style={styles.footerIconBox}>
           <Image
-            source={require('../assets/images/facebook.png')}
+            source={require('assets/images/facebook.png')}
             style={styles.footerIconStyle}
           />
         </TouchableOpacity>
@@ -56,19 +35,10 @@ function Footer() {
           />
         </TouchableOpacity>
       </View>
-        <Text
-          style={{...textCopyrights, ...textCopyrightsStyle}}
-        >
-          {"Copyright \u00a9 2022 Soora. All rights reserved"}
-        </Text>
-   </View>
   )
 }
 
 const styles = StyleSheet.create({
-  footerContainer: {
-    backgroundColor: 'blue',
-  },
   footerSocialMedia: {
     backgroundColor: 'red',
     paddingTop: 50,
@@ -77,7 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   footerIconBox: {
-    backgroundColor: 'powderblue',
+    backgroundColor: 'blue',
     width: 40,
     height: 40,
     justifyContent: 'center',
@@ -92,10 +62,6 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
   },
-  // footerCopyrights: {
-  //   backgroundColor: 'green',
-  //   height: '50',
-  // },
 })
 
-export default Footer
+export default FooterSocial
