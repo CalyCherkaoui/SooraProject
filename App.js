@@ -16,6 +16,8 @@ import BoxDisplay2 from './views/BoxDisplay2';
 import BoxInput from './views/BoxInput';
 import BoxImageB from './views/BoxImageB';
 import BoxFooter from './views/BoxFooter';
+import FooterCopyrights from './components/FooterCopyrights';
+import FooterSocial from './components/FooterSocial';
 
 
 export default function App() {
@@ -27,7 +29,7 @@ export default function App() {
     // { id: 4, compo: <BoxInput />},
     // { id: 5, compo: <BoxDisplay2 />},
     // { id: 6, compo: <BoxImageB />},
-    { id: 7, compo: <BoxFooter />},
+    { id: 7, compo: <FooterCopyrights />},
   ];
 
   return (
