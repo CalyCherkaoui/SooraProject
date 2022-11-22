@@ -6,7 +6,7 @@ function FooterSocial() {
       <View style={styles.footerSocialMedia}>
         <TouchableOpacity style={styles.footerIconBox}>
           <Image
-            source={require('assets/images/facebook.png')}
+            source={require('../assets/images/facebook.png')}
             style={styles.footerIconStyle}
           />
         </TouchableOpacity>
