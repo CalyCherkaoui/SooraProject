@@ -1,107 +1,53 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Image} from 'react-native';
-import { PageScrollView } from 'pagescrollview';
-import BoxImage from './components/BoxImage';
-import HeroTitle from './components/HeroTitle';
-import TextComingSoon from './components/TextComingSoon';
-import BoxImage2 from './components/BoxImage2';
-import ContactUsButton from './components/ContactUsButton';
-import BoxStoresImages from './components/BoxStoresImages';
-import InputEmail from './components/InputEmail';
+import { StyleSheet, SafeAreaView, FlatList} from 'react-native';
+// import { PageScrollView } from 'pagescrollview';
+// import BoxImage from './components/BoxImage';
+// import HeroTitle from './components/HeroTitle';
+// import TextComingSoon from './components/TextComingSoon';
+// import BoxImage2 from './components/BoxImage2';
+// import ContactUsButton from './components/ContactUsButton';
+// import BoxStoresImages from './components/BoxStoresImages';
+// import InputEmail from './components/InputEmail';
 import Footer from './components/Footer';
+import BoxNavigation from './views/BoxNavigation';
+import BoxDisplay1 from './views/BoxDisplay1';
+import BoxImageA from './views/BoxImageA';
+import BoxDisplay2 from './views/BoxDisplay2';
+import BoxInput from './views/BoxInput';
+import BoxImageB from './views/BoxImageB';
+
 
 export default function App() {
+
+  const componentsList = [
+    <BoxNavigation />,
+    <BoxDisplay1 />,
+    <BoxImageA />,
+    <BoxDisplay2 />,
+    <BoxInput />,
+    <BoxImageB />,
+    <Footer />
+  ];
+
   return (
-    <PageScrollView style={styles.appContainer} useWindowScrolling={true}>
-      <View style={styles.boxNavigation}>
-        <Image
-          source={require('./assets/images/logo1.png')}
-          style={styles.imgLogo}
-        />
-        <ContactUsButton />
-      </View>
-      <View style={styles.boxDisplay}>
-        <TextComingSoon />
-        <HeroTitle myText={"Bringing\nMuslims Together"} />
-        <BoxStoresImages />
-      </View>
-      <View style={styles.boxImages}>
-        <BoxImage2 />
-      </View>
-      <View style={styles.boxDisplay}>
-        <TextComingSoon />
-        <HeroTitle myText={"Get Notifiyed\nWhen we Launch"} />
-      </View>
-      <View style={styles.BoxInput}>
-        <InputEmail />
-      </View>
-      <View style={styles.boxImages}>
-        <BoxImage />
-      </View>
-      <Footer />
+    <SafeAreaView style={styles.appContainer}>
+      <FlatList
+        data={componentsList}
+        renderItem={
+          (item) => {
+            return item
+          }
+        }
+      />
       <StatusBar style="auto" />
-    </PageScrollView>
+    </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
   appContainer: {
-    paddingTop: 40,
-    // backgroundColor: 'green',
+    paddingTop: 30,
     flexDirection: 'column',
   },
-  boxNavigation:{
-    // backgroundColor: 'yellow',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignContent: 'center',
-    alignItems: 'center',
-    height: 32,
-    paddingLeft: 20,
-    paddingRight: 20,
-  },
-  boxDisplay:{
-    // backgroundColor: 'pink',
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 60,
-    justifyContent: 'center'
-  },
-  imgLogo: {
-    resizeMode: "contain",
-    height: 16,
-    width: 75,
-  },
-  textCoomingSoon: {
-    color: 'blue',
-    fontFamily: 'Inter-Regular',
-  },
-  // boxImages: {
-  //   // backgroundColor: 'orange',
-  // },
-  BoxInput: {
-    // backgroundColor: 'powderblue',
-    alignContent: 'center',
-    padding: 20,
-  },
-  inputContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    backgroundColor: 'powderblue',
-  },
-  TextInput: {
-    borderWidth: 1,
-    borderColor: 'black',
-    width: '60%'
-  },
-  // footerContainer: {
-  //   backgroundColor: 'blue',
-  // },
-  // footerSocialMedia: {
-  //   backgroundColor: 'red',
-  // },
-  // footerCopyrights: {
-  //   backgroundColor: 'green',
-  // },
 });
