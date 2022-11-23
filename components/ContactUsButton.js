@@ -33,7 +33,7 @@ function ContactUsButton() {
   return (
     <TouchableOpacity
           style={styles.ContactBtnStl}
-          // activeOpacity={1}
+          activeOpacity={0.75}
           onPress={showAlert}
           >
           <Text style={{...buttonTextStyle, ...textTypo}}>Contact Us</Text>

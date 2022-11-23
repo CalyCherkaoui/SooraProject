@@ -40,8 +40,6 @@ function FooterSocial() {
 
 const styles = StyleSheet.create({
   footerSocialMedia: {
-    backgroundColor: 'red',
-    // paddingTop: 50,
     paddingBottom: 20,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -49,7 +47,6 @@ const styles = StyleSheet.create({
     borderBottomColor: '#1E1E1E',
   },
   footerIconBox: {
-    backgroundColor: 'blue',
     width: 40,
     height: 40,
     justifyContent: 'center',

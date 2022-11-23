@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import { useFonts } from 'expo-font';
 
-function TextComingSoon(props) {
+function TextComingSoon() {
   const [fontsLoaded] = useFonts({
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
   })
@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    // backgroundColor: 'yellow',
     marginBottom: 8,
   },
   lineStyle: {

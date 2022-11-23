@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Dimensions } from 'react-native';
 
-function BoxImage2(props) {
+function BoxImage2() {
   const imageTitle = "landing-image-2";
   return (
     <Image
@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height/2,
-    // backgroundColor: 'red',
   }
 })
 

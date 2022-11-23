@@ -47,7 +47,7 @@ function InputEmail(props) {
   };
 
   return (
-    <View style={styles.inputContainer}>
+    <View>
       <View style={styles.formStyle}>
         <TextInput
           placeholder=''
@@ -72,11 +72,7 @@ function InputEmail(props) {
 }
 
 const styles = StyleSheet.create({
-  inputContainer: {
-    // backgroundColor: 'yellow',
-  },
   formStyle: {
-    // backgroundColor: 'gray',
     padding: 3,
     flexDirection: 'row',
     justifyContent: 'flex-end',
@@ -88,7 +84,6 @@ const styles = StyleSheet.create({
     marginBottom: 8.25,
   },
   inputStyle: {
-    // backgroundColor: 'blue',
     borderRadius: 100,
     flex: 2,
     fontSize: 12,

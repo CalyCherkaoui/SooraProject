@@ -14,7 +14,6 @@ function BoxFooter() {
 
 const styles = StyleSheet.create({
   footerContainer: {
-    backgroundColor: 'blue',
     paddingTop: 100,
   },
 })

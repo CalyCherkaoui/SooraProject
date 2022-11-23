@@ -35,7 +35,6 @@ function FooterCopyrights() {
 
 const styles = StyleSheet.create({
   copyrightBox : {
-    backgroundColor: 'yellow',
     paddingVertical: 18,
   }
 })
