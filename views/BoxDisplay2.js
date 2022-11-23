@@ -16,8 +16,9 @@ const styles = StyleSheet.create({
   boxDisplay:{
     paddingLeft: 20,
     paddingRight: 20,
-    paddingTop: 60,
-    justifyContent: 'center'
+    paddingTop: 40,
+    justifyContent: 'center',
+    backgroundColor: 'pink',
   },
 });
 
