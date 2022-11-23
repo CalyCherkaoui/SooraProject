@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true
+    "jest": true,
+    "react-native/react-native": true
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -13,10 +14,16 @@
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
-    "eol-last": "off"
+    "eol-last": "off",
+    "react-native/no-unused-styles": 2, // disallow unused styles
+    "react-native/no-inline-styles": 2, // disallow styles declared within the component itself
+    "react-native/no-color-literals": 2
   },
   "ignorePatterns": [
     "dist/",
     "build/"
+  ],
+  "plugins": [
+    "react-native" // add eslint-plugin-react-native as a plugin for ESLint
   ]
 }
