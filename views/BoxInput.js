@@ -1,13 +1,13 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import InputEmail from '../components/InputEmail'
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import InputEmail from '../components/InputEmail';
 
 function BoxInput() {
   return (
     <View style={styles.BoxInput}>
       <InputEmail />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BoxInput
+export default BoxInput;

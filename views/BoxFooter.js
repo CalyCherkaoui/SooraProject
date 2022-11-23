@@ -1,7 +1,7 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import FooterCopyrights from '../components/FooterCopyrights'
-import FooterSocial from '../components/FooterSocial'
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import FooterCopyrights from '../components/FooterCopyrights';
+import FooterSocial from '../components/FooterSocial';
 
 function BoxFooter() {
   return (
@@ -9,13 +9,13 @@ function BoxFooter() {
       <FooterSocial />
       <FooterCopyrights />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   footerContainer: {
     paddingTop: 100,
   },
-})
+});
 
-export default BoxFooter
+export default BoxFooter;

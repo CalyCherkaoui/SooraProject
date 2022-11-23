@@ -1,5 +1,7 @@
-import React from 'react'
-import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
+import React from 'react';
+import {
+  StyleSheet, View, TouchableOpacity, Image,
+} from 'react-native';
 
 function FooterSocial() {
   return (
@@ -35,7 +37,7 @@ function FooterSocial() {
           />
         </TouchableOpacity>
       </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -61,6 +63,6 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
   },
-})
+});
 
-export default FooterSocial
+export default FooterSocial;

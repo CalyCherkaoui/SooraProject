@@ -13,7 +13,7 @@ function BoxStoresImages() {
         source={require('../assets/images/apple-store.png')}
       />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     width: 134.19,
     height: 38.8,
   },
-})
+});
 
-export default BoxStoresImages
+export default BoxStoresImages;

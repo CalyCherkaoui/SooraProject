@@ -1,6 +1,6 @@
-import React from 'react'
-import { View, StyleSheet, Image } from 'react-native'
-import ContactUsButton from '../components/ContactUsButton'
+import React from 'react';
+import { View, StyleSheet, Image } from 'react-native';
+import ContactUsButton from '../components/ContactUsButton';
 
 function BoxNavigation() {
   return (
@@ -11,11 +11,11 @@ function BoxNavigation() {
       />
       <ContactUsButton />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-  boxNavigation:{
+  boxNavigation: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignContent: 'center',
@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   imgLogo: {
-    resizeMode: "contain",
+    resizeMode: 'contain',
     height: 16,
     width: 75,
   },
 });
 
-export default BoxNavigation
+export default BoxNavigation;

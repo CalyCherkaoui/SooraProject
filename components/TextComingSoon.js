@@ -5,18 +5,18 @@ import { useFonts } from 'expo-font';
 function TextComingSoon() {
   const [fontsLoaded] = useFonts({
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
-  })
+  });
 
   let textFont = {
     fontFamily: 'Inter-Medium',
-  }
+  };
 
   const TextCoomingSoonStyle = {
     fontSize: 12,
-    fontWeight: "500",
+    fontWeight: '500',
     lineHeight: 14.52,
-    alignContent: 'center'
-  }
+    alignContent: 'center',
+  };
 
   if (!fontsLoaded) {
     textFont = {};
@@ -24,9 +24,9 @@ function TextComingSoon() {
   return (
     <View style={styles.commingSoonBox}>
       <View style={styles.lineStyle}></View>
-      <Text style={{...textFont, ...TextCoomingSoonStyle}}>Coming Soon</Text>
+      <Text style={{ ...textFont, ...TextCoomingSoonStyle }}>Coming Soon</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -43,6 +43,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     marginRight: 5.6,
   },
-})
+});
 
 export default TextComingSoon;
