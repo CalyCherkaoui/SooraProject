@@ -10,7 +10,7 @@
 
 ## Presentation/Demo:
 
-[Demo-Live of the App]()
+[Demo-Live of the App](exp://exp.host/@houdach/SooraProject?release-channel=default)
 
 Screenshot:
 <br>
