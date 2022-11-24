@@ -1,11 +1,7 @@
 # SOORA React-Native
 
-
-## About the project:
-
 ## Table of content:
 
-- [About the project](#about-the-project)
 - [Presentation/Demo](#presentation)
 - [Dependencies](#dependencies)
 - [Getting started](#getting-started)
