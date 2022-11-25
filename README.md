@@ -14,7 +14,7 @@
 
 Screenshot:
 <br>
-<img width="800" src='./assets/screencapture-sooratheapp.png>
+<img width="800" src='./assets/screencapture-sooratheapp.png'>
 <br>
 
 ## Dependencies:
